@@ -1,0 +1,10 @@
+
+.navbar-light .navbar-nav .nav-link {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: white;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color:#dce09a;
+}

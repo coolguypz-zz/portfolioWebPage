@@ -1,0 +1,71 @@
+
+.projectLayer{
+  height: 40vh;
+}
+
+.sweet_corner{
+  background-image: url("../source/sweet_corner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.grade{
+  background-image: url("../source/grade.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;  
+  background-position: center;
+  box-sizing: border-box;
+}
+.match{
+  background-image: url("../source/match.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;  
+  background-position: center;
+  box-sizing: border-box;
+}
+.project{
+  height: 40vh;
+  position: relative;
+}
+
+.projectA{
+  cursor: pointer;
+}
+
+.colDiv:hover .innerLayer{
+  display: block;
+}
+
+.innerLayer {
+  display: none;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  opacity: 0.9;
+  width: 20vw;
+  height: 35vh;
+  color: black;
+}
+
+.githubDiv{
+  height: 8vh;
+  width: 8vw;
+  margin-left: 30%;
+}
+@media only screen and (max-width: 768px) {
+ 
+  .project{
+    height: 20vh;
+    margin: 5px;
+    background-size: 55vmin;
+  }
+
+  .colDiv:hover .innerLayer{
+    display: none;
+  }
+}
