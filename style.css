@@ -1,0 +1,155 @@
+
+body {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.logo {
+  height: 7vh;
+  width: 7vw;
+  background-image: none
+}
+
+.backgroungImg {
+  background-image: url("./componets//source/macComputer.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.leterSpaceOne {
+  letter-spacing: 1vw;
+}
+
+.letterSapce {
+  letter-spacing: 0.7vw;
+}
+
+.letterSapce02 {
+  letter-spacing: 0.2vw;
+}
+
+.fontSize3 {
+  font-size: 3rem;
+}
+
+h5 {
+  color: rgb(219, 217, 214);
+}
+
+h2 {
+  color: #F2F2F2;
+}
+
+h4 {
+  color: #F2F2F2;
+}
+
+.coverletter{
+  color: white;
+  margin-bottom: 8%;
+  text-align: center;
+}
+
+.coverpage p {
+  font-size: 1.1rem;
+  color: rgb(240, 240, 240);
+  letter-spacing: 0.1vw;
+  margin: 20px 0;
+}
+
+.coverpage p a {
+  color: lightblue;
+}
+
+.coverpage p a:hover {
+  text-decoration: none;
+  color: lightpink;
+  font-family: 'Open Sans', sans-serif;
+}
+
+main{
+  background-color: black;
+}
+
+.skills-container {
+  padding: 0 9vh 9vw;
+}
+
+.pb-10 {
+  padding-bottom: 10vh;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.mb-15vh {
+  margin-bottom: 15vh;
+}
+
+.ht-25vh {
+  height: 25vh;
+}
+
+.ht-100vh {
+  height: 100vh;
+}
+
+.mt-10vh {
+  margin-top: 10vh;
+}
+
+.mt-25vh {
+  margin-top: 25vh;
+}
+
+.text-style {
+  font-size: 1rem;
+}
+
+.text-style p a {
+  color: white;
+  cursor: pointer;
+}
+
+.text-style p a:hover {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.contact{
+  background: black;
+}
+
+.footerBackGournd {
+  background-color: rgb(255, 255, 255);
+  height: 12vh;
+}
+
+.footerText {
+  margin-top: 3vh;
+  color: black;
+  font-size: 1.3rem;
+}
+
+
+/* Extra small devices (portrait phones; less than 576px) */
+
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 768.98px) and (max-width: 991.98px) {
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+
