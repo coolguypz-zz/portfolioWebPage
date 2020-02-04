@@ -17,7 +17,7 @@ const projectData = [
     "name": "Animal Match",
     "className":`match`,
     "skills": "OOP Boostrap",
-    "github": "https://github.com/Peterzhang123/surf",
+    "github": "https://github.com/Peterzhang123/animalMatch",
     "website": "/"
 
   }
