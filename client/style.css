@@ -140,7 +140,7 @@ main{
 
 /* Extra small devices (portrait phones; less than 576px) */
 
-@media (min-width: 575.98px) and (max-width: 767.98px) {
+@media (min-width: 575.98px) {
 
   .bg-custom{
     background: rgba(211, 211, 211,0.1);
@@ -148,15 +148,10 @@ main{
   .mysite{
     height: 100vh
   }
-  .pt-80 {
-    padding-top: 20px;
-  }
   .mb-15vh {
     margin-bottom: 10vh;
   }
-  .coverpage{
-    height: 150vh;
-  }
+
   .skills-container {
     padding: 0 5vh 5vw;
   }
@@ -167,7 +162,7 @@ main{
 }
 
 /* Small devices (landscape phones, less than 768px) */
-@media (min-width: 768.98px) and (max-width: 991.98px) {
+@media (max-width: 991.98px) {
   .bg-custom{
     background: rgba(211, 211, 211,0.1);
   }
