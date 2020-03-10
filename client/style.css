@@ -186,7 +186,7 @@ main{
   }
   .mt-20{
     position: absolute;
-    margin-top: 15vh;
+    margin-top: 20vh;
     left:50%;
     transform: translateX(-50%);
   }
