@@ -19,8 +19,6 @@ body {
   height: 100vh;
 }
 
-
-
 .leterSpaceOne {
   letter-spacing: 1vw;
 }
@@ -140,20 +138,24 @@ main{
 
 /* Extra small devices (portrait phones; less than 576px) */
 
-@media (min-width: 575.98px) {
+@media (min-width: 575.98px) and (max-width: 767.98px) {
 
   .bg-custom{
     background: rgba(211, 211, 211,0.1);
   }
   .mysite{
-    height: 100vh
+    height: 100vh;
   }
+ 
   .mb-15vh {
     margin-bottom: 10vh;
   }
 
   .skills-container {
-    padding: 0 5vh 5vw;
+    padding: 0 4vh 4vw;
+  }
+  h5{
+    font-size: 1rem;
   }
   li{
     border-top: 1px solid rgba(75, 74, 74, 0.9);
@@ -162,7 +164,8 @@ main{
 }
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 991.98px) {
+@media (min-width: 768.98px) and (max-width: 991.98px) {
+ 
   .bg-custom{
     background: rgba(211, 211, 211,0.1);
   }
@@ -170,10 +173,13 @@ main{
     height: auto;
   }
   .mysite{
-    height: 100vh
+    height: 100vh;
   }
   .skills-container {
     padding: 0 5vh 5vw;
+  }
+  h5{
+    font-size: 1rem;
   }
   li{
     border-top: 1px solid rgba(75, 74, 74, 0.9);
