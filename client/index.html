@@ -16,17 +16,21 @@
 <body>
   <!--Main Navigation-->
   <header id="home" class="backgroungImg">
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-custom">
       <a href="#home">
         <img class="logo" src="./componets/source/logo.svg">
       </a>
-      <div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav" id="navUl">
         </ul>
       </div>
     </nav>
     <div class="container">
-      <div class="row mt-25vh">
+      <div class="row mt-20">
         <div class="col text-center text-light">
           <p class="leterSpaceOne fontSize3">PETER ZHANG</p>
           <p class="letterSapce">WEB DEVELOPMENT</p>
@@ -47,14 +51,15 @@
       <div class="row projectLayer"></div>
     </section>
 
-    <section class="sectionOne container ht-100vh coverpage " id="coverletter">
+    <section class=" container ht-100vh coverpage" id="coverletter">
       <div class="row">
-        <div class="col-md-10 offset-md-1 mt-10vh">
-          <h3 class="coverletter">Cover Letter</h3>
-          <p> 
+        <div class="col-12 mt-10vh">
+          <h3 class="coverletter pb-3">Cover Letter</h3>
+          <p>
             Hi, my name is Zhiqin Zhang (Peter Zhang) and I’m passionate about coding and software development and how
             they can be used to help others in their personal and professional lives.
-          </p></p>
+          </p>
+          </p>
           <p>
             Back to 2008, I learned HTML, CSS, JS, JQUERY, AJAX, C#, JAVA and MySQL in China. I have build hospital
             application Via C# win form with MySQL for my portfolio project, very functional. I have concept of it but
@@ -77,35 +82,33 @@
             My working experience, learning experience and my passion of programming would make me a fantastic asset to
             your team. I would love the opportunity to bring all my dedication to web development to your team.
           </p>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="col-12">
+        </div>
+        <div class="col">
+          <div class="col">
+            <div class="col-md-12">
               <p>
                 <a href="mailto: peterzzq1986@gmail.com">E-Mail: peterzzq1986@gmail.com</a>
               </p>
             </div>
-            <div class="col-12">
+            <div class="col-md-12">
               <p>
                 <a href="tel:(949) 339-7400 ">Phone: (949) 339-7400 </a>
               </p>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="col-sm-4 ">
-              <p class="btn btn-info">
-                  <a href="./componets/source/Peter-Zhang.pdf">Download Resume </a>
-              </p>
-            </div>
-          </div>
         </div>
+        <div class="col mt-5">
+          <div class="col-md-4">
+            <a class="btn btn-info" href="./componets/source/Peter-Zhang.pdf">Download Resume </a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="sectionTwo container pt-80 ht-100vh mt-5" id="skills">
+    <section class=" container ht-100vh mt-5" id="skills">
       <h2 class="pb-10  text-center">Skills / Tools I Have Experience With</h2>
       <div class="row">
-        <div class="col-6 col-sm-4 col-md-2 col-lg-2 skills-container">
+        <div class="col-3 col-lg-2 skills-container">
           <div class="skill-icon">
             <svg class="devicon-skills" viewBox="0 0 128 128">
               <path fill="#E44D26" d="M19.037 113.876l-10.005-112.215h109.936l-10.016 112.198-45.019 12.48z">
@@ -118,10 +121,10 @@
                 d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zM63.952 24.599v13.762h33.244l.276-3.092.628-6.978.329-3.692z">
               </path>
             </svg>
-            <h5>HTML 5</h5>
+            <h5>HTML5</h5>
           </div>
         </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg-2 skills-container">
+        <div class="col-3 col-lg-2 skills-container">
           <div class="skill-icon">
             <svg viewBox="0 0 128 128">
               <path fill="#1572B6"
@@ -141,10 +144,10 @@
                 d="M64.048 23.435v13.831000000000001h-33.407999999999994l-.277-3.108-.63-7.012-.331-3.711h34.646zM64.001 51.431v13.831000000000001h-15.209l-.277-3.108-.631-7.012-.33-3.711h16.447z">
               </path>
             </svg>
-            <h5>CSS 3</h5>
+            <h5>CSS3</h5>
           </div>
         </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg-2 skills-container">
+        <div class="col-3 col-lg-2 skills-container">
           <div class="skill-icon">
             <svg viewBox="0 0 128 128">
               <path fill="#F0DB4F"
@@ -154,7 +157,7 @@
             <h5>JavaScript</h5>
           </div>
         </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg-2 skills-container">
+        <div class="col-3 col-lg-2 skills-container">
           <div class="skill-icon">
             <svg viewBox="0 0 128 128">
               <path fill="#0868AC"
@@ -164,7 +167,7 @@
             <h5>jQuery</h5>
           </div>
         </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg-2 skills-container">
+        <div class="col-3 col-lg-2 skills-container">
           <div class="skill-icon-area">
             <svg xmlns="http://www.w3.org/2000/svg" class="devicon-skills" viewBox="0 0 128 128"
               enable-background="new 0 0 128 128">
@@ -178,7 +181,7 @@
             <h5>ReactJS</h5>
           </div>
         </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg-2 skills-container">
+        <div class="col-3 col-lg-2 skills-container">
           <div class="skill-icon-area">
             <svg xmlns="http://www.w3.org/2000/svg" class="devicon-skills" viewBox="0 0 100 100">
               <path
@@ -194,7 +197,7 @@
             <h5>Redux</h5>
           </div>
         </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg-2 skills-container">
+        <div class="col-3 col-lg-2 skills-container">
           <div class="skill-icon">
             <svg viewBox="0 0 128 128">
               <path fill="#5B4282"
@@ -204,7 +207,7 @@
             <h5>Bootstrap</h5>
           </div>
         </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg-2 skills-container">
+        <div class="col-3 col-lg-2 skills-container">
           <div class="skill-icon-area">
             <svg class="devicon-skills" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               viewBox="0 -50 256 256" version="1.1" preserveAspectRatio="xMidYMid">
@@ -230,7 +233,7 @@
             <h5>Materialize</h5>
           </div>
         </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg-2 skills-container">
+        <div class="col-3 col-lg-2 skills-container">
           <div class="skill-icon-area">
             <svg class="devicon-skills" viewBox="0 0 128 128">
               <path fill-rule="evenodd" clip-rule="evenodd" fill="#CB6699"
@@ -240,7 +243,7 @@
             <h5>Sass</h5>
           </div>
         </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg-2 skills-container">
+        <div class="col-3 col-lg-2 skills-container">
           <div class="skill-icon">
             <svg viewBox="0 0 128 128">
               <path fill="#83CD29"
@@ -265,7 +268,7 @@
             <h5>Node.js</h5>
           </div>
         </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg-2 skills-container">
+        <div class="col-3 col-lg-2 skills-container">
           <div class="skill-icon-area">
             <svg class="devicon-skills" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 2491 2491"
               viewBox="0 0 2491 2491">
@@ -290,7 +293,7 @@
             <h5>Postman</h5>
           </div>
         </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg-2 skills-container">
+        <div class="col-3 col-lg-2 skills-container">
           <div class="skill-icon-area">
             <svg class="devicon-skills" viewBox="0 0 128 128">
               <path fill="#F34F29"
@@ -300,7 +303,7 @@
             <h5>Git</h5>
           </div>
         </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg-2 skills-container">
+        <div class="col-3 col-lg-2 skills-container">
           <div class="skill-icon-area">
             <svg enable-background="new 0 0 512 512" id="Layer_1" version="1.1" viewBox="0 0 512 512"
               xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -313,7 +316,7 @@
             <h5>GitHub</h5>
           </div>
         </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg-2 skills-container">
+        <div class="col-3 col-lg-2 skills-container">
           <div class="skill-icon-area">
             <svg class="devicon-skills" viewBox="0 0 128 128">
               <path fill="#F7A80D"
@@ -323,7 +326,7 @@
             <h5>AWS</h5>
           </div>
         </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg-2 skills-container">
+        <div class="col-3 col-lg-2 skills-container">
           <div class="skill-icon-area">
             <svg viewBox="0 0 128 128">
               <path fill="#DD4814"
@@ -333,7 +336,7 @@
             <h5>Ubuntu</h5>
           </div>
         </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg-2 skills-container">
+        <div class="col-3 col-lg-2 skills-container">
           <div class="skill-icon-area">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 130.746 595.279 580.398">
               <radialGradient id="a" cx="-183.69" cy="328.972" r=".76"
@@ -349,7 +352,7 @@
             <h5>Photoshop</h5>
           </div>
         </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg-2 skills-container">
+        <div class="col-3 col-lg-2 skills-container">
           <div class="skill-icon-area">
             <svg class="devicon-skills" viewBox="0 0 256 256" fill="none">
               <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="256" height="256">
@@ -413,10 +416,10 @@
                 </linearGradient>
               </defs>
             </svg>
-            <h5>VS Code</h5>
+            <h5>VSCode</h5>
           </div>
         </div>
-        <!-- <div class="col-6 col-sm-4 col-md-2 col-lg-2 skills-container">
+        <!-- <div class="col-3 col-lg-2 skills-container">
           <div class="skill-icon-area">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" viewBox="0 0 500 500"
@@ -464,7 +467,7 @@
             <h5>C#</h5>
           </div>
         </div> -->
-        <div class="col-6 col-sm-4 col-md-2 col-lg-2 skills-container">
+        <div class="col-3 col-lg-2 skills-container">
           <div class="skill-icon-area">
             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -518,7 +521,7 @@
       </div>
     </section>
 
-    <section class="container pb-10 mt-25vh" id="contact">
+    <section class="container mt-5" id="contact">
       <div class="row ">
         <div class="col text-center text-light text-uppercase font-weight-bold text-style letterSapce02">
           <h4 class="mb-5">Contact Info</h4>
@@ -552,7 +555,15 @@
     </div>
   </footer>
 
-
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
   <script src="./componets/nav/navData.js"></script>
   <script src="./componets/nav/navModel.js"></script>
   <script src="./componets/project/projectData.js"></script>
