@@ -1,15 +1,38 @@
 
 class Controller {
   constructor(elementConfig) {
-    this.projectLayer = $(elementConfig.projectLayer);
-    this.ul = $(elementConfig.ul);
-
-
     this.addProject = this.addProject.bind(this);
-    this.addNav = this.addNav.bind(this);
     this.projectHandler = this.projectHandler.bind(this);
+    this.handlePageScroll = this.handlePageScroll.bind(this);
+    this.handleNavClick = this.handleNavClick.bind(this);
+
+    this.dom = {
+      area: {
+        ul: $(elementConfig.ul),
+        projectLayer: $(elementConfig.projectLayer),
+        nav: $(elementConfig.navbar),
+        main: $(elementConfig.main),
+      }
+    }
+
+    this.navBar = new NavBar({
+      click: this.handleNavClick
+    })
+
     this.projects = [];
     this.navList = [];
+  }
+  handleNavClick(navbar, nav) {
+    this.navBar.callbacksChangePages(navbar, nav);
+  }
+  loadNav() {
+    this.navBar.loadNav();
+  }
+  loadNavBar() {
+    return this.navBar.renderNavBar();
+  }
+  displayNavBar() {
+    this.dom.area.nav.prepend(this.loadNavBar());
   }
   addProject(project) {
     this.projects.push(new ProjectModel(project, {
@@ -21,24 +44,10 @@ class Controller {
   }
   renderProject(projectClass) {
     var projectRender = projectClass.map(v => { return v.renderProject() });
-    this.projectLayer.empty().append(projectRender);
-  }
-
-  loadNav(navData) {
-    navData.forEach(this.addNav);
-  }
-  addNav(nav) {
-    this.navList.push(new NavModel(nav, {
-      click: this.navhandler
-    }))
-  }
-  render(navClass) {
-    var navRender = navClass.map(v => { return v.renderNav() });
-    this.ul.empty().append(navRender);
+    this.dom.area.projectLayer.empty().append(projectRender);
   }
 
   displayProject() {
-    this.render(this.navList);
     this.renderProject(this.projects)
   }
   navhandler() {
@@ -48,5 +57,18 @@ class Controller {
   projectHandler(project) {
 
   }
+  addEventListener() {
+    this.dom.area.main.scroll( this.handlePageScroll);
+    window.addEventListener('scroll',this.handlePageScroll);
+     document.addEventListener("keydown",this.handlePageScroll)
+    // window.addEventListener("resize",this.handlePageScroll);
+  }
+  handlePageScroll() {
+     var scrollY = window.scrollY;
+     var content = window.content;
+     var offset = window.offset;
+     var winH = window.innerHeight;
 
+     console.log(scrollY,content,offset,winH);
+    }
 }

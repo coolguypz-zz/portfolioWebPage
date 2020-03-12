@@ -1,12 +1,15 @@
 $(document).ready(initialized);
 
 function initialized() {
-  const controller = new Controller({
+  const cl = new Controller({
     projectLayer:".projectLayer",
-    ul:"#navUl"
+    navbar:"#home",
+    main:".main"    
   })
-  controller.loadProject(projectData);
-  controller.loadNav(navData);
-  controller.displayProject();
+  cl.loadProject(projectData);
+  cl.loadNav();
+  cl.displayNavBar();
+  cl.displayProject();
+  cl.addEventListener();
 }
 

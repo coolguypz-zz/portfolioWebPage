@@ -5,18 +5,26 @@ body {
   font-size: 14px;
 }
 
-.logo {
-  height: 7vh;
-  width: 7vw;
-  background-image: none
+header{
+  min-height: 100%;
 }
 
 .backgroungImg {
+  height: 100vh;
   background-image: url("./componets//source/macComputer.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.main{
+  background-color: black;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
   height: 100vh;
+}
+.main::-webkit-scrollbar{
+  display: none;
 }
 
 .leterSpaceOne {
@@ -68,11 +76,9 @@ h4 {
   color: lightpink;
   font-family: 'Open Sans', sans-serif;
 }
-
-main{
-  background-color: black;
+.skills{
+  margin-top: 10vh;
 }
-
 .skills-container {
   padding: 0 6vh 6vw;
 }
@@ -93,7 +99,7 @@ main{
   height: 25vh;
 }
 
-.ht-100vh {
+section {
   min-height: 100vh;
 }
 
@@ -139,13 +145,6 @@ main{
 /* Extra small devices (portrait phones; less than 576px) */
 
 @media (min-width: 575.98px) and (max-width: 767.98px) {
-
-  .bg-custom{
-    background: rgba(211, 211, 211,0.1);
-  }
-  .mysite{
-    height: 100vh;
-  }
  
   .mb-15vh {
     margin-bottom: 10vh;
@@ -157,39 +156,23 @@ main{
   h5{
     font-size: 1rem;
   }
-  li{
-    border-top: 1px solid rgba(75, 74, 74, 0.9);
-    text-align: center;
+
+  .coverpage{
+    margin-top: 10%;
   }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (min-width: 768.98px) and (max-width: 991.98px) {
  
-  .bg-custom{
-    background: rgba(211, 211, 211,0.1);
-  }
-  .ht-100vh {
-    height: auto;
-  }
-  .mysite{
-    height: 100vh;
-  }
   .skills-container {
     padding: 0 5vh 5vw;
   }
   h5{
     font-size: 1rem;
   }
-  li{
-    border-top: 1px solid rgba(75, 74, 74, 0.9);
-    text-align: center;
-  }
-  .mt-20{
-    position: absolute;
-    margin-top: 20vh;
-    left:50%;
-    transform: translateX(-50%);
+  .coverpage{
+    margin-top: 10%;
   }
 }
 

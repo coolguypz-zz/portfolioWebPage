@@ -1,10 +1,82 @@
 
-.navbar-light .navbar-nav .nav-link {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 1.1rem;
+.page-nav{
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.page-nav label, #hamburger{
+  display: none;
+}
+
+.logo {
+  height: 7vh;
+  width: 7vw;
+  display: inline-block;
+}
+
+.page-nav ul{
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.page-nav ul li{
+  display: inline-block;
+  padding: 20px;
   color: white;
+  box-sizing: border-box;
+  cursor: pointer;
 }
-.navbar-light .navbar-nav .nav-link:hover {
-  color:#dce09a;
+
+.page-nav ul li:hover{
+  color: rgb(204, 158, 43);
 }
+
+@media screen and (max-width:768px){
+  .page-nav{
+    position: relative;
+    background: rgba(211, 211, 211,0.1);
+  }
+  .logo {
+    height: 10vh;
+    width: 10vw;
+    display: inline-block;
+  }
+  .page-nav label{
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    color: white;
+    background: darkred;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+  }
+  .page-nav ul{
+    display: none;
+  }
+  .page-nav ul li{
+    display: block;
+    text-align: center;
+    padding: 8px;
+    font-size: 0.9rem;
+    animation: mymove 1s ease-in;
+    border-top: 1px solid rgba(75, 74, 74, 0.9);
+  }
+  .page-nav input:checked ~ ul {
+    display: block;
+  }
+  .page-nav ul{
+    animation-timing-function: cubic-bezier(0, 0, 1, 1);
+  }
+  @keyframes mymove{
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+}
+
+
+
