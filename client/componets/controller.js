@@ -46,14 +46,12 @@ class Controller {
     var projectRender = projectClass.map(v => { return v.renderProject() });
     this.dom.area.projectLayer.empty().append(projectRender);
   }
-
   displayProject() {
     this.renderProject(this.projects)
   }
   navhandler() {
 
   }
-
   projectHandler(project) {
 
   }
@@ -61,16 +59,15 @@ class Controller {
     // this.dom.area.main.scroll(this.handlePageScroll);
     // window.addEventListener('scroll', this.handlePageScroll);
     // document.addEventListener("keydown", this.handlePageScroll);
-    window.onscroll = this.handlePageScroll();
     // window.addEventListener("resize",this.handlePageScroll);
   }
   handlePageScroll() {
-    var scrollY = window.scrollY;
-    var content = window.content;
-    var offset = window.offset;
-    var winH = window.innerHeight;
-    var scroTop = document.body.scrollTop || document.documentElement.scrollTop
+    // var scrollY = window.scrollY;
+    // var content = window.content;
+    // var offset = window.offset;
+    // var winH = window.innerHeight;
+    // var scroTop = document.body.scrollTop || document.documentElement.scrollTop
 
-    console.log(scrollY, content, offset, winH,scroTop);
+    // console.log(scrollY, content, offset, winH,scroTop);
   }
 }
