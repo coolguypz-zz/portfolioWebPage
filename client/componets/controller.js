@@ -58,17 +58,19 @@ class Controller {
 
   }
   addEventListener() {
-    this.dom.area.main.scroll( this.handlePageScroll);
-    window.addEventListener('scroll',this.handlePageScroll);
-     document.addEventListener("keydown",this.handlePageScroll)
+    // this.dom.area.main.scroll(this.handlePageScroll);
+    // window.addEventListener('scroll', this.handlePageScroll);
+    // document.addEventListener("keydown", this.handlePageScroll);
+    window.onscroll = this.handlePageScroll();
     // window.addEventListener("resize",this.handlePageScroll);
   }
   handlePageScroll() {
-     var scrollY = window.scrollY;
-     var content = window.content;
-     var offset = window.offset;
-     var winH = window.innerHeight;
+    var scrollY = window.scrollY;
+    var content = window.content;
+    var offset = window.offset;
+    var winH = window.innerHeight;
+    var scroTop = document.body.scrollTop || document.documentElement.scrollTop
 
-     console.log(scrollY,content,offset,winH);
-    }
+    console.log(scrollY, content, offset, winH,scroTop);
+  }
 }
