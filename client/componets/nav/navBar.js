@@ -7,7 +7,7 @@ class NavBar {
     this.navList = [
       {
         link: "HOME",
-        href: "#"
+        href: "#home"
       },
       {
         link: "MY PROJECT",
