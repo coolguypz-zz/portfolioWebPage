@@ -1,18 +1,32 @@
 
 .page-nav{
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1;
 }
+
+.nav-animation{
+  transition: top 0.3s;
+  opacity: 0;
+  /* animation: title-Move 1s; */
+}
+/* @keyframes title-Move{
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    -webkit-transform: translateY(-100%)
+  }
+} */
 
 .page-nav label, #hamburger{
   display: none;
 }
 
 .logo {
-  height: 7vh;
-  width: 7vw;
+  width: 5vw;
   display: inline-block;
 }
 

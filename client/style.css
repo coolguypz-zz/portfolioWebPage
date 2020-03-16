@@ -3,10 +3,20 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
+  background-color: black;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 100vh;
+}
+body::-webkit-scrollbar{
+  display: none;
 }
 
 header{
   min-height: 100%;
+}
+header .title{
+  padding-top: 20vh;
 }
 
 .backgroungImg {
@@ -18,13 +28,9 @@ header{
 }
 
 .main{
-  background-color: black;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
   height: 100vh;
-}
-.main::-webkit-scrollbar{
-  display: none;
+  /* overflow-y: scroll;
+  scroll-behavior: smooth; */
 }
 
 .leterSpaceOne {

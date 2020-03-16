@@ -5,6 +5,7 @@ class Controller {
     this.projectHandler = this.projectHandler.bind(this);
     this.handlePageScroll = this.handlePageScroll.bind(this);
     this.handleNavClick = this.handleNavClick.bind(this);
+    this.loadNav = this.loadNav.bind(this);
 
     this.dom = {
       area: {
@@ -12,6 +13,7 @@ class Controller {
         projectLayer: $(elementConfig.projectLayer),
         nav: $(elementConfig.navbar),
         main: $(elementConfig.main),
+        mainNav: $(elementConfig.mainNav),
       }
     }
 
@@ -57,17 +59,38 @@ class Controller {
   }
   addEventListener() {
     // this.dom.area.main.scroll(this.handlePageScroll);
-    // window.addEventListener('scroll', this.handlePageScroll);
+    window.addEventListener('scroll', this.handlePageScroll);
     // document.addEventListener("keydown", this.handlePageScroll);
-    // window.addEventListener("resize",this.handlePageScroll);
+    window.addEventListener("resize", this.handlePageScroll);
+
   }
   handlePageScroll() {
-    // var scrollY = window.scrollY;
-    // var content = window.content;
-    // var offset = window.offset;
-    // var winH = window.innerHeight;
-    // var scroTop = document.body.scrollTop || document.documentElement.scrollTop
 
-    // console.log(scrollY, content, offset, winH,scroTop);
+    var winH = window.innerHeight;
+    var scroTop = document.body.scrollTop || document.documentElement.scrollTop;
+    var logo = $(".logo");
+    var pageNav = this.dom.area.nav.find(".page-nav")
+
+
+    if ((scroTop / winH) >= 1) {
+      pageNav.removeClass("nav-animation")
+        .css({ "position": "fixed", "background": "#141425" });
+      logo.css("width", "3vw");
+    }
+
+    if ((scroTop / winH) < 1) {
+      pageNav.css("background", "none");
+      if ((scroTop / winH) >= 0.22 && (scroTop / winH) <= 1) {
+        pageNav.addClass("nav-animation");
+      }
+      else if ((scroTop / winH) >= 0 && (scroTop / winH) <= 0.09) {
+        pageNav.removeClass("nav-animation");
+        logo.css("width", "5vw");
+      }
+    }
+
+
+    console.log(winH, scroTop, (scroTop / winH));
+    return;
   }
 }

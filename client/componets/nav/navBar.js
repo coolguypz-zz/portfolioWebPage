@@ -4,9 +4,6 @@ class NavBar {
     this.addToNavbar = this.addToNavbar.bind(this);
     this.handleChangePage = this.handleChangePage.bind(this);
 
-    
-  
-
     this.navList = [
       {
         link: "HOME",
@@ -83,6 +80,5 @@ class NavBar {
   }
   callbacksChangePages(navbar, nav) {
     self.location = `index.html${nav.data.href}`
-   
   }
 }

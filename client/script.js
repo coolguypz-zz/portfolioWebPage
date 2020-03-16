@@ -4,7 +4,8 @@ function initialized() {
   const cl = new Controller({
     projectLayer:".projectLayer",
     navbar:"#home",
-    main:".main"    
+    main:".main",
+    mainNav:".main-nav"   
   })
   cl.loadProject(projectData);
   cl.loadNav();
