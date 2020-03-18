@@ -96,7 +96,7 @@ class Controller {
         pageNav.addClass("nav-animation");
       }
       else if ((scroTop / winH) >= 0 && (scroTop / winH) <= 0.5) {
-        pageNav.removeClass("nav-animation");
+        pageNav.removeClass("nav-animation").css("background", "none");
         logo.css("width", "5vw");
         nav.css("z-index", "none");
       }
