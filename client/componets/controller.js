@@ -69,23 +69,36 @@ class Controller {
     var winH = window.innerHeight;
     var scroTop = document.body.scrollTop || document.documentElement.scrollTop;
     var logo = $(".logo");
-    var pageNav = this.dom.area.nav.find(".page-nav")
+    var pageNav = this.dom.area.nav.find(".page-nav");
+    var nav = $(".page-nav");
+    var x = window.matchMedia("(max-width:768px)");
 
 
     if ((scroTop / winH) >= 1) {
       pageNav.removeClass("nav-animation")
-        .css({ "position": "fixed", "background": "#141425" });
+      if(x.matches){
+        pageNav.css({
+          "background": "rgba(211, 211, 211,0.1)",
+          "z-index": "none"});
+      }else{
+      pageNav.css({ "position": "fixed", "background": "#141425" });
       logo.css("width", "3vw");
+      } 
     }
 
     if ((scroTop / winH) < 1) {
-      pageNav.css("background", "none");
-      if ((scroTop / winH) >= 0.22 && (scroTop / winH) <= 1) {
+      if (x.matches) {
+        pageNav.css("background", "none");
+      }else{
+        
+      }
+      if ((scroTop / winH) >= 0.5 && (scroTop / winH) <= 1) {
         pageNav.addClass("nav-animation");
       }
-      else if ((scroTop / winH) >= 0 && (scroTop / winH) <= 0.09) {
+      else if ((scroTop / winH) >= 0 && (scroTop / winH) <= 0.5) {
         pageNav.removeClass("nav-animation");
         logo.css("width", "5vw");
+        nav.css("z-index", "none");
       }
     }
 

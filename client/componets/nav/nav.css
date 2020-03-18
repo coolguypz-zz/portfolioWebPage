@@ -51,8 +51,9 @@
 
 @media screen and (max-width:768px){
   .page-nav{
-    position: relative;
-    background: rgba(211, 211, 211,0.1);
+    /* position: relative; */
+    background:#141425;
+    z-index: 1;
   }
   .logo {
     height: 10vh;
@@ -77,13 +78,15 @@
     padding: 8px;
     font-size: 0.9rem;
     animation: mymove 1s ease-in;
-    border-top: 1px solid rgba(75, 74, 74, 0.9);
+    border-top: 1px solid #141425;
   }
   .page-nav input:checked ~ ul {
     display: block;
+    background: #141425;
   }
   .page-nav ul{
     animation-timing-function: cubic-bezier(0, 0, 1, 1);
+
   }
   @keyframes mymove{
     from {opacity: 0;}
