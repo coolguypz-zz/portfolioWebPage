@@ -19,6 +19,12 @@ const projectData = [
     "skills": "OOP Boostrap",
     "github": "https://github.com/Peterzhang123/animalMatch",
     "website": "/"
-
-  }
+  },
+  {
+    "name": "EventMaster",
+    "className":`event`,
+    "skills": "OOP Boostrap MVC",
+    "github": "https://github.com/Peterzhang123/eventmaster",
+    "website": "http://eventmaster.zhiqinz.com/"
+  },
 ]

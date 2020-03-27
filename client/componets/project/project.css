@@ -25,6 +25,13 @@
   background-position: center;
   box-sizing: border-box;
 }
+.event{
+  background-image: url("../source/events.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;  
+  background-position: center;
+  box-sizing: border-box;
+}
 .project{
   height: 40vh;
   position: relative;
@@ -47,14 +54,14 @@
   transform: translate(-50%, -50%);
   background-color: white;
   opacity: 0.9;
-  width: 20vw;
-  height: 35vh;
+  width: 80%;
+  height: 80%;
   color: black;
 }
 
 .githubDiv{
-  height: 8vh;
-  width: 8vw;
+  height: 5vh;
+  width: 5vw;
   margin-left: 30%;
 }
 @media only screen and (max-width: 768px) {

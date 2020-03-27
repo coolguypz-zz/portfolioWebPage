@@ -9,7 +9,7 @@ class ProjectModel {
   }
   renderProject() {
     var col = $("<div>", {
-      class: `col-md-4 col-sm-12 colDiv`
+      class: `col-md-3 col-sm-12 colDiv`
     })
     var imageDiv = $("<div>", {
       class: `project ${this.data.className}`
