@@ -2,28 +2,28 @@ const projectData = [
   {
     "name": "Sweet Corner",
     "className":`sweet_corner`,
-    "skills": "React Redux Node",
+    "skills": "React, Redux, Node",
     "github": "https://github.com/Peterzhang123/m41019_sweet_corner",
     "website": "http://sweet-corner.zhiqinz.com"
   },
   {
     "name": "Student Grade",
     "className":`grade`,
-    "skills": "jQuery Node Boostrap",
+    "skills": "jQuery, Node, Boostrap",
     "github": "https://github.com/Peterzhang123/sgt_m4_1019",
     "website": "http://sgt.zhiqinz.com/"
   },
   {
     "name": "Animal Match",
     "className":`match`,
-    "skills": "OOP Boostrap",
+    "skills": "OOP, Boostrap",
     "github": "https://github.com/Peterzhang123/animalMatch",
     "website": "/"
   },
   {
     "name": "EventMaster",
     "className":`event`,
-    "skills": "OOP Boostrap MVC",
+    "skills": "MVC, OOP, Google-API, TicketMaster-API, Bootstrap",
     "github": "https://github.com/Peterzhang123/eventmaster",
     "website": "http://eventmaster.zhiqinz.com/"
   },
